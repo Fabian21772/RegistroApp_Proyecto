@@ -1,0 +1,32 @@
+<ion-header class="background">
+  <ion-toolbar>
+    <ion-img src="../assets/img/logotipo.png" height="60"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class="background">
+  <ion-grid>
+  <ion-label>
+    <h1 class="h1">Bienvenido/a:</h1>
+    <h1 class="h3">{{usuario}}</h1>
+  </ion-label>
+
+  <ion-card-content>
+    <ion-img src="../assets/img/duoc.png" style="width : 300px ; height : 300px" class="qrprev"></ion-img>
+  </ion-card-content>
+
+  
+
+      <ion-row>
+        <ion-col size="4" offset="5" sise-sm>
+          <ion-button shape="block" (click)="iniciar()" color="warning" routerLink="/login" style="width: 50%;  ">Cerrar
+            Sesión</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+ 
+
+</ion-content>
